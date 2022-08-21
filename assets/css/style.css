@@ -2,12 +2,13 @@
     --color1:#001730;
     --color2:#4AD7D1;
     --color3:#FE4A49;
-    --color4:#3d4348;
+    --color4:#535557;
+    --color5:#293139;
     --html5-color:#f06529;
     --html5-color2:#e34c26;
     --css3-color:#264de4;
     --css3-color2:#2965f1;
-    --js-color:#f0db4f;
+    --js-color:#293139;
 }
 
 
@@ -24,7 +25,6 @@ body{
     height:auto;
     overflow:hidden !important;
     font-family: 'Lato', sans-serif !important;
-    background-color:var(--color4);
 }
 .removeOverflow{
     overflow:auto !important;
@@ -51,6 +51,15 @@ svg{
     width:100%;
     height:100vh;
     position:relative;
+}
+.content-area{
+    /* border:2px solid black; */
+}
+.countdown-btn{
+    background-color: var(--color5);
+}
+.countdown-btn:hover{
+    background-color:var(--color5) !important;
 }
 .button-wrapper{
     /* border:2px solid black; */
