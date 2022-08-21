@@ -7,6 +7,8 @@
     <title>Ariweb Intern | Landing Section</title>
     <!--=====> BOOTSTRAP CDN <=====-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!--=====> FONTAWESOME CDN <=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--=====> GENERAL STYLESHEET <=====-->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -30,20 +32,22 @@
         </rect>
       </svg>
 </div>
-<div class="show-now-wrapper d-flex justify-content-center">
-    <div class="box">
-        <img src="./assets/img/do-not-enter-sign-not-css.svg" alt="">
+<div class="show-now-wrapper d-flex justify-content-center container p-0">
+    <div class="container box w-100 p-0">
+        <div class="col-8 mx-auto d-block mt-5 image-wrapper col-sm-6">
+            <img src="./assets/img/do-not-enter-sign-not-css.svg" alt="" class="img-fluid">
+        </div>
         <h2 class="text-center">Site Under construction...</h2>
         <!-- Button wrapper -->
-        <div class="button-wrapper d-flex flex-column gap-2 mt-3 mb-5 flex-sm-row">
+        <div class="button-wrapper d-flex justify-content-center flex-column gap-2 mt-3 mb-5 sm-flex flex-sm-row p-2 pb-5">
         <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML" class="text-decoration-none me-2" target="_blank">
-            <button class="btn btn-primary w-100" type="button">Test Your HTML Skills</button>
+            <button class="btn btn-block btn-lg d-block mx-auto w-100 shadow-none html-btn" type="button"><i class="fa-brands fa-html5"></i> Test Your HTML Skills</button>
         </a>
         <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS" class="text-decoration-none me-2" target="_blank">
-            <button class="btn btn-primary w-100" type="button">Test Your CSS Skills</button>
+            <button class="btn btn-block btn-lg d-block mx-auto w-100 shadow-none css-btn" type="button"><i class="fa-brands fa-css3-alt"></i> Test Your CSS Skills</button>
         </a>
         <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS" class="text-decoration-none me-2" target="_blank">
-            <button class="btn btn-primary w-100" type="button">Test Your JS Skills</button>
+            <button class="btn btn-block btn-lg d-block mx-auto w-100 shadow-none js-btn" type="button"><i class="fa-brands fa-square-js"></i> Test Your JS Skills</button>
         </a>
     </div>
     </div>
