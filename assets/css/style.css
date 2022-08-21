@@ -2,6 +2,7 @@
     --color1:#001730;
     --color2:#4AD7D1;
     --color3:#FE4A49;
+    --color4:#3d4348;
     --html5-color:#f06529;
     --html5-color2:#e34c26;
     --css3-color:#264de4;
@@ -22,6 +23,8 @@ body{
     width:100%;
     height:auto;
     overflow:hidden !important;
+    font-family: 'Lato', sans-serif !important;
+    background-color:var(--color4);
 }
 .removeOverflow{
     overflow:auto !important;
@@ -63,4 +66,7 @@ svg{
 .js-btn{
     background-color: var(--js-color);
     color:#fff;
+}
+.html-btn,.css-btn,.js-btn{
+    font-weight:400;
 }
