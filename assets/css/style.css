@@ -2,6 +2,11 @@
     --color1:#001730;
     --color2:#4AD7D1;
     --color3:#FE4A49;
+    --html5-color:#f06529;
+    --html5-color2:#e34c26;
+    --css3-color:#264de4;
+    --css3-color2:#2965f1;
+    --js-color:#f0db4f;
 }
 
 
@@ -10,21 +15,25 @@
 *::after{
     margin:0;
     padding:0;
+    box-sizing:border-box !important;
 }
 
 body{
     width:100%;
     height:auto;
-    /* background-color:var(--color1); */
+    overflow:hidden !important;
+}
+.removeOverflow{
+    overflow:auto !important;
 }
 #preloader{
     position:absolute;
     width:100%;
-    min-height:120vh;
+    height:100vh;
     z-index:999;
     background-color:var(--color1);
     transition: background-color 1s linear 0s;
-    overflow-x:hidden;
+    overflow:hidden !important;
 }
 .offPreloader{
     background-color:var(--color1);
@@ -37,19 +46,21 @@ svg{
 }
 .show-now-wrapper{
     width:100%;
-    min-height:100vh;
-    /* border:4px solid red; */
+    height:100vh;
     position:relative;
-    /* display:none !important; */
-}
-/* .box{
-    border:2px solid black;
-} */
-.box img{
-    width:450px;
-    display:block;
-    margin:auto;
 }
 .button-wrapper{
     /* border:2px solid black; */
+}
+.html-btn{
+    background-color:var(--html5-color);
+    color:#fff;
+}
+.css-btn{
+    background-color: var(--css3-color);
+    color:#fff;
+}
+.js-btn{
+    background-color: var(--js-color);
+    color:#fff;
 }
