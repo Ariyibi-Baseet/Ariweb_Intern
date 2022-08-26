@@ -9,13 +9,13 @@ const toDate = new Date("September 5 2022 00:00:00");
 
 
 // FUNCTION TO SHOW PRELOADER FOR 5 SECONDS
-// function offPreloader()
-// {
-//     document.getElementById('preloader').classList.add('offPreloader');
-//     document.body.classList.add('removeOverflow');
-// }
+function offPreloader()
+{
+    document.getElementById('preloader').classList.add('offPreloader');
+    document.body.classList.add('removeOverflow');
+}
 
-// setTimeout(offPreloader,5000);
+setTimeout(offPreloader,5000);
 
 
 // COUNTDOWN TIMER
@@ -33,9 +33,5 @@ function countDownTimer()
     hours.innerHTML = hours_ < 10 ? '0' + hours_ : hours_;
     minutes.innerHTML = minutes_ < 10 ? '0' + minutes_ : minutes_;
     seconds.innerHTML = seconds_ < 10 ? '0' + seconds_ : seconds_;
-    // console.log(seconds);
 }
 setInterval(countDownTimer,1000);
-
-
-
