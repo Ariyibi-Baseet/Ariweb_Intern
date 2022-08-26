@@ -49,8 +49,20 @@ svg{
 }
 .show-now-wrapper{
     width:100%;
-    height:100vh;
+    height:auto;
     position:relative;
+    background-image:url('../img/team.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    isolation:isolate;
+}
+.show-now-wrapper::after{
+    content:'';
+    position:absolute;
+    background-color:var(--color5);
+    inset:0;
+    z-index: -1;
+    opacity:.7;
 }
 .content-area{
     /* border:2px solid black; */
@@ -68,14 +80,27 @@ svg{
     background-color:var(--html5-color);
     color:#fff;
 }
+.html-btn:hover{
+    background-color:#fff;
+    color:var(--html5-color);
+}
 .css-btn{
     background-color: var(--css3-color);
     color:#fff;
+}
+.css-btn:hover{
+    background-color:#fff;
+    color:var(--css3-color2);
 }
 .js-btn{
     background-color: var(--js-color);
     color:#fff;
 }
+.js-btn:hover{
+    color: var(--js-color);
+    background-color:#fff;
+}
 .html-btn,.css-btn,.js-btn{
     font-weight:400;
+    outline:0;
 }
