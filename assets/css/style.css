@@ -55,11 +55,17 @@ svg{
     background-repeat:no-repeat;
     background-size:cover;
     isolation:isolate;
+    -ms-isolation:isolate;
+    -webkit-isolation:isolate;
 }
 .show-now-wrapper::after{
     content:'';
     position:absolute;
     background-color:var(--color5);
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
     inset:0;
     z-index: -1;
     opacity:.7;
