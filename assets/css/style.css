@@ -23,13 +23,13 @@
 body{
     width:100%;
     height:auto;
-    overflow:hidden !important;
+    /* overflow:hidden !important; */
     font-family: 'Lato', sans-serif !important;
 }
 .removeOverflow{
     overflow:auto !important;
 }
-#preloader{
+/* #preloader{
     position:absolute;
     width:100%;
     height:100vh;
@@ -42,7 +42,7 @@ body{
     background-color:var(--color1);
     transition: background-color 1s linear 0s;
     display:none !important;
-}
+} */
 svg{
     width:250px;
     height:250px;
