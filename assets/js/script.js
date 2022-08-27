@@ -5,7 +5,7 @@ const minutes  = document.querySelector('.minutes');
 const seconds  = document.querySelector('.seconds');
 
 // to this specific date
-const toDate = new Date("September 5 2022 00:00:00");
+const toDate = new Date("September 10 2022 00:00:00");
 
 
 // FUNCTION TO SHOW PRELOADER FOR 5 SECONDS
@@ -33,5 +33,16 @@ function countDownTimer()
     hours.innerHTML = hours_ < 10 ? '0' + hours_ : hours_;
     minutes.innerHTML = minutes_ < 10 ? '0' + minutes_ : minutes_;
     seconds.innerHTML = seconds_ < 10 ? '0' + seconds_ : seconds_;
+
+    
+    if(days_ == 0 && hours_ == 00 && minutes == 00 && seconds_ == 00)
+    {
+        return hello()
+    }
 }
 setInterval(countDownTimer,1000);
+
+function hello()
+{
+    alert('Yay🎉🎉')
+}
