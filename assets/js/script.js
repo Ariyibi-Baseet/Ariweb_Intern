@@ -5,7 +5,7 @@ const minutes  = document.querySelector('.minutes');
 const seconds  = document.querySelector('.seconds');
 
 // to this specific date
-const toDate = new Date("September 10 2022 00:00:00");
+const toDate = new Date("September 1 2022 00:00:00");
 
 
 // FUNCTION TO SHOW PRELOADER FOR 5 SECONDS
@@ -35,14 +35,16 @@ function countDownTimer()
     seconds.innerHTML = seconds_ < 10 ? '0' + seconds_ : seconds_;
 
     
-    if(days_ == 0 && hours_ == 00 && minutes == 00 && seconds_ == 00)
-    {
-        return hello()
-    }
 }
 setInterval(countDownTimer,1000);
 
-function hello()
+rederAfterDate();
+function rederAfterDate()
 {
-    alert('Yay🎉🎉')
+    if(currentTime === toDate)
+    {
+        document.querySelector('.proceed-btn-wrapper').style.display = "block";
+        document.querySelector('.content-area').style.display = "none";
+        document.querySelector('.site-l-text').style.display = "none";
+    }
 }

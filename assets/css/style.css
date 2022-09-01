@@ -18,6 +18,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box !important;
+    text-decoration:none !important;
 }
 
 body{
@@ -81,6 +82,14 @@ svg{
 }
 .button-wrapper{
     /* border:2px solid black; */
+}
+.proceed-btn{
+    background-color: var(--js-color);
+    color:#fff;   
+}
+.proceed-btn:hover{
+    background-color:#fff;
+    color: var(--js-color);
 }
 .html-btn{
     background-color:var(--html5-color);
