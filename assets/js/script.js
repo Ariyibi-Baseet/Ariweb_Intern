@@ -4,8 +4,6 @@ const hours  = document.querySelector('.hours');
 const minutes  = document.querySelector('.minutes');
 const seconds  = document.querySelector('.seconds');
 
-// to this specific date
-const toDate = new Date("September 1 2022 00:00:00");
 
 
 // FUNCTION TO SHOW PRELOADER FOR 5 SECONDS
@@ -19,6 +17,10 @@ setTimeout(offPreloader,5000);
 
 
 // COUNTDOWN TIMER
+// to this specific date
+const toDate = new Date("September 3, 2022 08:12:35");
+
+
 function countDownTimer()
 {
     const currentTime = new Date();
@@ -34,17 +36,25 @@ function countDownTimer()
     minutes.innerHTML = minutes_ < 10 ? '0' + minutes_ : minutes_;
     seconds.innerHTML = seconds_ < 10 ? '0' + seconds_ : seconds_;
 
-    
-}
-setInterval(countDownTimer,1000);
-
-rederAfterDate();
-function rederAfterDate()
-{
-    if(currentTime === toDate)
-    {
+    if (timeDifference < 0) {
+        clearInterval(countDownTimer);
         document.querySelector('.proceed-btn-wrapper').style.display = "block";
         document.querySelector('.content-area').style.display = "none";
         document.querySelector('.site-l-text').style.display = "none";
     }
+    
 }
+
+setInterval(countDownTimer,1000);
+
+
+// rederAfterDate();
+// function rederAfterDate()
+// {
+//     if(currentTime === toDate)
+//     {
+//         document.querySelector('.proceed-btn-wrapper').style.display = "block";
+//         document.querySelector('.content-area').style.display = "none";
+//         document.querySelector('.site-l-text').style.display = "none";
+//     }
+// }
