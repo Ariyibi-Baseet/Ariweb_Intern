@@ -9,6 +9,7 @@
     --css3-color:#264de4;
     --css3-color2:#2965f1;
     --js-color:#293139;
+    --froggy-color:#4CC24F;
 }
 
 
@@ -115,7 +116,15 @@ svg{
     color: var(--js-color);
     background-color:#fff;
 }
-.html-btn,.css-btn,.js-btn{
+.froggy-btn{
+    background-color:var(--froggy-color);
+    color:#fff;
+}
+.froggy-btn:hover{
+    color:var(--froggy-color);
+    background-color: #fff;
+}
+.html-btn,.css-btn,.js-btn,.froggy-btn{
     font-weight:400;
     outline:0;
 }
