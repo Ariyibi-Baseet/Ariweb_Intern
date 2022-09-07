@@ -18,11 +18,10 @@ setTimeout(offPreloader,5000);
 
 // COUNTDOWN TIMER
 // to this specific date
-const toDate = new Date("September 3, 2022 08:12:35");
+const toDate = new Date("September 10, 2022 00:00:00");
 
 
-function countDownTimer()
-{
+var countDownTimer = setInterval(function(){
     const currentTime = new Date();
     const timeDifference = toDate - currentTime;
 
@@ -42,19 +41,4 @@ function countDownTimer()
         document.querySelector('.content-area').style.display = "none";
         document.querySelector('.site-l-text').style.display = "none";
     }
-    
-}
-
-setInterval(countDownTimer,1000);
-
-
-// rederAfterDate();
-// function rederAfterDate()
-// {
-//     if(currentTime === toDate)
-//     {
-//         document.querySelector('.proceed-btn-wrapper').style.display = "block";
-//         document.querySelector('.content-area').style.display = "none";
-//         document.querySelector('.site-l-text').style.display = "none";
-//     }
-// }
+},1000)
